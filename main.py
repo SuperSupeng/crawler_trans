@@ -48,8 +48,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     url = args.url
 
-    # title = crawl_and_save(url)
-    title = "test"
+    title = crawl_and_save(url)
     print(f"Saved to content_en/{title}.md")
     translation = translate_and_save(title)
-    print(translation)
+    print(f"Saved to content_zh/{title}.md")
